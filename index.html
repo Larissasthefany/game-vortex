@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="jogos, games, promoções.">
+    <meta name="description" content="Bem-vindo à Game Vortex, sua fonte para jogos incríveis e entretenimento.">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/15.4.0/css/all.min.css">
+    <title>Bem-vindo à Game Vortex - Sua Fonte de Diversão e Jogos Incríveis</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a id="logo" href="#" alt="Game store - pagina inicial">
+                <h1>Game <strong>Vortex</strong></h1>
+            </a>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="pre">
+                <h1>Pre-order <br> <strong>The evil Within 3</strong></h1>
+                <button>Pre-order</button>
+            </div>
+
+            <img id="evil" src="src/img/within.png" alt="Capa do the evil within 3">
+        </section>
+
+        <form id="filtro-form">
+            <label for="filtroJogos">Filtrar por:</label>
+            <select id="filtroJogos" name="filtroJogos">
+                <option value="todos">Todos os jogos</option>
+                <option value="emPromocao">Promoção</option>
+                <option value="gratuito">Gratuitos</option>
+            </select>
+            <input type="submit" value="Pesquisar">
+        </form>
+
+        <div id="imagem-jogo">
+            <img class="img-jogo" src="" alt="Imagem dos Jogos">
+        </div>
+        <ul id="lista-de-jogos">
+        </ul>
+    </main>
+
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
