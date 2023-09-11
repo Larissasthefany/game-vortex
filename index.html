@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="jogos, games, promoções.">
     <meta name="description" content="Bem-vindo à Game Vortex, sua fonte para jogos incríveis e entretenimento.">
+    <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/15.4.0/css/all.min.css">
     <title>Bem-vindo à Game Vortex - Sua Fonte de Diversão e Jogos Incríveis</title>
 </head>
 
@@ -16,6 +16,7 @@
         <nav>
             <a id="logo" href="#" alt="Game store - pagina inicial">
                 <h1>Game <strong>Vortex</strong></h1>
+                <img src="src/img/controle.png" alt="">
             </a>
 
             <ul>
@@ -34,18 +35,20 @@
                 <button>Pre-order</button>
             </div>
 
-            <img id="evil" src="src/img/within.png" alt="Capa do the evil within 3">
+            <img id="evil" src="src/img/teste.jpg" alt="Capa do the evil within 3">
         </section>
 
-        <form id="filtro-form">
-            <label for="filtroJogos">Filtrar por:</label>
-            <select id="filtroJogos" name="filtroJogos">
-                <option value="todos">Todos os jogos</option>
-                <option value="emPromocao">Promoção</option>
-                <option value="gratuito">Gratuitos</option>
-            </select>
-            <input type="submit" value="Pesquisar">
-        </form>
+        <div class="form">
+            <form id="filtro-form">
+                <label for="filtroJogos">Filtrar por:</label>
+                <select id="filtroJogos" name="filtroJogos">
+                    <option value="todos">Todos os jogos</option>
+                    <option value="emPromocao">Promoção</option>
+                    <option value="gratuito">Gratuitos</option>
+                </select>
+                <input type="submit" value="Pesquisar">
+            </form>
+        </div>
 
         <div id="imagem-jogo">
             <img class="img-jogo" src="" alt="Imagem dos Jogos">
@@ -53,6 +56,77 @@
         <ul id="lista-de-jogos">
         </ul>
     </main>
+
+    <aside class="top-aside">
+        <div class="news">
+            <h2>Recente News</h2>
+
+            <div class="new-info">
+
+                <div>
+                    <p>Cyberpunk 2077 cosplay event in november 25.</p>
+                    <span>12/12/2023</span>
+                </div>
+
+                <div class="imagens">
+                    <img src="src/img/cyber.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="new-info">
+
+                <div>
+                    <p>Xbox Series X and S break records: best Xbox launch in history.</p>
+                    <span>05/11/2023</span>
+                </div>
+
+                <div class="imagens">
+                    <img src="src/img/xbox.png" alt="">
+                </div>
+            </div>
+
+            <div class="new-info">
+
+                <div>
+                    <p>Astro's Playroom, new feature of dualsense control.</p>
+                    <span>18/10/2023</span>
+                </div>
+
+                <div class="imagens">
+                    <img src="src/img/astro.png" alt="">
+                </div>
+            </div>
+
+            <h2 class="news">Top Games</h2>
+
+            <div class="top-games">
+                <ul>
+                    <li><a href="https://diablo4.blizzard.com/pt-br/">1 Diablo IV</a></li>
+
+                    <li><a href="Hollow Knight: Silksong">2 Hollow Knight: Silksong</a></li>
+
+                    <li><a href="https://store.playstation.com/pt-br/product/UP9000-CUSA02299_00-MARVELSSMGOTY000">3
+                            Marvel’s Spider-Man 2</a></li>
+
+                    <li><a href="https://bethesda.net/pt/game/redfall">4 Redfall</a></li>
+
+                    <li><a href="https://www.residentevil.com/re4/pt-br/">5 Resident Evil 4 Remake</a></li>
+
+                    <li><a href="https://bethesda.net/pt/game/starfield">6 Starfield</a></li>
+
+                    <li><a href="https://www.ea.com/pt-br/games/starwars/jedi/jedi-survivor">7 Star Wars Jedi:
+                            Survivor</a></li>
+
+                    <li><a href="https://www.streetfighter.com/6/pt-br">8 Street Fighter 6</a></li>
+
+                    <li><a
+                            href="https://www.nintendo.com/pt-br/store/products/the-legend-of-zelda-tears-of-the-kingdom-switch/">9
+                            The Legend of Zelda: Tears of the Kingdom</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </aside>
 
     <script src="src/js/script.js"></script>
 </body>
