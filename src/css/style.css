@@ -25,7 +25,6 @@
 body {
     font-family: var(--font-bebas);
     min-height: 100vh;
-    /* background-color: var(--primary-color); */
 }
 
 header {
@@ -37,8 +36,9 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 60px 80px;
     align-items: center;
+    padding: 20px 100px 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 
 ul {
@@ -66,20 +66,6 @@ ul li a:hover {
     opacity: 1;
 }
 
-#logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-size: 29px;
-    gap: 10px;
-    letter-spacing: 2px;
-}
-
-#logo strong {
-    color: var(--red);
-}
-
 main {
     display: flex;
     justify-content: space-evenly;
@@ -91,7 +77,8 @@ main {
 
 .hero {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
@@ -100,7 +87,7 @@ main {
     line-height: 65px;
     color: var(--preto-de-prussia);
     width: 490px;
-    font-weight: bolder;
+    font-weight: normal;
     text-transform: uppercase;
     position: relative;
 }
@@ -123,10 +110,10 @@ button {
     border: none;
     color: #fff;
     background-color: var(--red);
-    border-radius: 5px;
+    border-radius: 20px;
     letter-spacing: 1px;
     cursor: pointer;
-    font-weight: bolder;
+    font-weight: normal;
 }
 
 button:hover {
@@ -135,21 +122,19 @@ button:hover {
 
 #evil {
     width: 490px;
-    border-radius: 10px;
 }
 
 form {
     margin-top: 100px;
-    /* margin-left: -198px; */
     margin-left: 10px;
 }
 
 label {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     letter-spacing: 1px;
     font-family: var(--font-roboto);
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
     position: relative;
 }
 
@@ -160,7 +145,7 @@ label::after {
     bottom: 0;
     top: 0;
     width: 4px;
-    height: 28px;
+    height: 20px;
     background-color: var(--red);
     position: absolute;
 }
@@ -171,15 +156,21 @@ option {
     border: none;
 }
 
+option::before {
+    content: "• ";
+    color: red;
+}
+
 select {
     border: none;
     outline: none;
     cursor: pointer;
     padding: 7px;
-    font-size: 1.3rem;
+    width: 208px;
+    font-size: 1.1rem;
     text-transform: uppercase;
-    font-weight: bold;
-    margin-right: 100px;
+    font-weight: normal;
+    margin-right: 80px;
 }
 
 input {
@@ -189,9 +180,9 @@ input {
     font-size: 0.9rem;
     background-color: var(--red);
     color: var(--secondary-color);
-    border-radius: 5px;
-    padding: 9px 12px;
-    font-weight: bold;
+    border-radius: 20px;
+    padding: 7px 10px;
+    font-weight: normal;
     font-family: var(--font-roboto);
 }
 
@@ -218,7 +209,7 @@ aside {
 .top-aside {
     /* position: fixed; */
     position: absolute;
-    top: 28%;
+    top: 38%;
     right: 0;
     z-index: 1;
 }

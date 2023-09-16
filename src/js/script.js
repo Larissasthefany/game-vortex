@@ -27,6 +27,12 @@ let catalogoDeJogos = [
 const filtroForm = document.getElementById('filtro-form');
 const imagemDoJogo = document.querySelector('#imagem-jogo img')
 const listaDeJogos = document.getElementById('lista-de-jogos');
+const menuIcon = document.querySelector('.menu-icon');
+const navLinks = document.querySelector('.nav-links');
+
+menuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
 
 function exibirJogos(filtroSelecionado) {
     listaDeJogos.innerHTML = '';

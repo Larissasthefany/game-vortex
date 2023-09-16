@@ -1,0 +1,232 @@
+@media (max-width: 767px) {
+
+    body {
+        margin: 0 auto;
+        background-color: var(--secondary-color);
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 95px;
+        left: 0;
+        right: 0;
+        background-color: var(--secondary-color);
+        text-align: center;
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: var(--red);
+        margin: 5px auto;
+        transition: 0.4s;
+    }
+
+    .menu-icon.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-icon.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-icon.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    nav {
+        padding: 0 20px;
+        margin-top: 18px;
+        background-color: var(--secondary-color);
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    #logo img {
+        padding: 0;
+        margin: 0;
+        width: 90px;
+    }
+
+    main {
+        display: block;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
+
+    .hero h1 {
+        text-align: center;
+        margin: 40px 0 20px 0;
+        font-size: 2rem;
+        line-height: 42px;
+        letter-spacing: 1px;
+    }
+
+    .hero h1::after {
+        width: 38px;
+        top: -10px;
+        left: 180px;
+    }
+
+    #evil {
+        margin-top: 20px;
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    button {
+        display: flex;
+        margin: 0 auto;
+        font-size: 1rem;
+        padding: 7px 11px;
+    }
+
+    form {
+        margin-top: 50px;
+    }
+
+    .form {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    select {
+        margin: 20px;
+    }
+
+    input {
+        margin-top: 10px;
+    }
+
+    #imagem-jogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+    }
+
+    /* Revisar esta parte dps */
+    #imagem-jogo img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .img-jogo {
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    #lista-de-jogos {
+        margin: 0 auto;
+        /* width: 300px; */
+    }
+
+    #lista-de-jogos li {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    label::after {
+        height: 19px;
+    }
+
+    option {
+        font-size: 0.7rem;
+    }
+
+    select {
+        font-size: 0.9rem;
+        padding: 0;
+    }
+
+    aside {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .top-aside {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .news h2 {
+        font-size: 1.5rem;
+        text-decoration: underline;
+        text-decoration-color: var(--red);
+        border-bottom-width: 4px;
+    }
+
+    .news h2::after {
+        /* left: 270px;
+        height: 35px; */
+        display: none;
+    }
+
+    .new-info {
+        width: 300px;
+        height: 120px;
+        padding: 10px;
+        margin: 0 auto;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        background-color: #F1F4F6;
+    }
+
+    .new-info:hover {
+        background-color: #edeff096;
+    }
+
+    .new-info div {
+        gap: 10px;
+    }
+
+    .new-info p {
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+
+    .new-info p::after {
+        display: none;
+    }
+
+    .new-info span {
+        font-size: 0.9rem;
+    }
+
+    .top-games ul {
+        margin: 0 auto;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos para tablets */
+}
