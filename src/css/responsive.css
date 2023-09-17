@@ -1,8 +1,9 @@
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
     body {
         margin: 0 auto;
         background-color: var(--secondary-color);
+        overflow-x: hidden;
     }
 
     .nav-links {
@@ -89,8 +90,10 @@
     }
 
     #evil {
+        max-width: 100%;
+        height: auto;
         margin-top: 20px;
-        width: 300px;
+        /* width: 300px; */
         border-radius: 10px;
     }
 
@@ -132,8 +135,9 @@
     }
 
     .img-jogo {
+        max-width: 100%;
+        height: auto;
         margin: 0 auto;
-        height: 100%;
     }
 
     #lista-de-jogos {
@@ -172,6 +176,11 @@
         margin-top: 20px;
     }
 
+    li img {
+        min-width: 100%;
+        height: auto;
+    }
+
     .top-aside {
         position: static;
         margin-bottom: 20px;
@@ -191,8 +200,10 @@
     }
 
     .new-info {
-        width: 300px;
-        height: 120px;
+        /* width: 300px;
+        height: 120px; */
+        min-width: 100%;
+        height: auto;
         padding: 10px;
         margin: 0 auto;
         border-radius: 3px;
